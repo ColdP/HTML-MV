@@ -1,0 +1,10 @@
+# Source assets and local build work
+.work/
+U/
+Suisei/
+three.min.js
+outputs/videos/
+
+# Local/editor files
+.DS_Store
+Thumbs.db
