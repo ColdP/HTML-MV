@@ -131,17 +131,26 @@ function createStoryboard(score){
   floatL:{p:[-7,12,22],q:[-1,9,20],l:[3.5,7,0],k:[3.3,7.2,0],f:43,layout:'right',roll:-.025},
   rose:{p:[0,11,42],q:[7,13,36],l:[0,7,-10],k:[0,7,-8],f:48,hero:false,layout:'center',bars:1},
   finale:{p:[5,7.8,26],q:[-4,9,30],l:[-3.5,5.6,0],k:[-4,5.7,0],f:43,layout:'left'},
-  farewell:{p:[0,10,31],q:[0,22,66],l:[0,5.5,0],k:[0,7,-10],f:45,layout:'bottom',bars:1}
+  farewell:{p:[0,10,31],q:[0,22,66],l:[0,5.5,0],k:[0,7,-10],f:45,layout:'bottom',bars:1},
+  longLake:{p:[16,22,42],q:[-13,12,24],l:[0,5,-5],k:[2,5,0],f:46,layout:'bottom',bars:1},
+  longPrism:{p:[-22,18,-3],q:[-82,18,-105],l:[-40,9,-45],k:[-23,9,-140],f:50,layout:'bottom',bars:1},
+  longArcade:{p:[25,15,-155],q:[44,10,-166],l:[55,5,-190],k:[63,5,-190],f:46,layout:'bottom',bars:1},
+  longEarth:{p:[44,10,-166],q:[45,17,-205],l:[63,5,-190],k:[10,12,-257],f:51,layout:'bottom',bars:1,hero:false},
+  longFlight:{p:[5,16,-258],q:[-27,20,-294],l:[0,7,-290],k:[-60,12,-335],f:50,layout:'bottom',bars:1,hero:false},
+  longShip:{p:[-76,17,-350],q:[-80,20,-382],l:[-95,10,-385],k:[-25,12,-435],f:52,layout:'bottom',bars:1,hero:false},
+  longCathedral:{p:[-5,23,-444],q:[14,9,-453],l:[15,7,-480],k:[11,5,-480],f:48,layout:'bottom',bars:1},
+  longFinale:{p:[17,8,-468],q:[11,10,-450],l:[13,7,-480],k:[15,5,-480],f:44,layout:'bottom',bars:1}
  };
  // t, camera, location, costume, cut language, lyric treatment.
  const rows=[
- [0,'establish','lake',1,'dip','cinema'],[1.70,'portraitR','lake',1,'dissolve','reveal'],[6.71,'eyes','lake',1,'cut','vertical'],[11.91,'wideL','lake',0,'match','orbit'],[16.49,'portraitR','lake',0,'cut','echo'],[22.09,'crystal','lake',0,'dissolve','poem'],[25,'wideR','lake',0,'match','reveal'],[27.24,'high','lake',0,'cut','comet'],[30.3,'lake','lake',0,'dissolve','cinema'],
- [32.75,'low','prism',0,'white','burst'],[35.4,'portraitL','prism',0,'cut','reveal'],[37.98,'aerial','prism',0,'iris','orbit'],[42.33,'wideR','prism',0,'match','distance'],[45.05,'eyes','prism',0,'cut','distance'],[47.93,'portraitL','prism',0,'cut','echo'],[50.45,'low','prism',0,'whip','echo'],[53.02,'wideR','prism',0,'match','scatter'],[56.1,'aerial','prism',0,'cut','scatter'],[59.33,'portraitL','prism',0,'dissolve','poem'],[63,'rose','cosmos',3,'dissolve','cinema'],
- [66.27,'portraitR','arcade',2,'dip','reveal'],[71.61,'wideL','arcade',2,'cut','wave'],[76.78,'low','arcade',2,'whip','orbit'],[81.39,'eyes','arcade',2,'cut','vertical'],[86.96,'tunnel','flight',2,'dissolve','poem'],[91.95,'portraitL','arcade',2,'cut','comet'],[94.6,'high','arcade',2,'match','comet'],
- [97.31,'low','prism',0,'white','burst'],[100,'portraitR','prism',0,'cut','reveal'],[102.43,'orbit','prism',0,'match','wave'],[107.01,'wideL','prism',0,'cut','distance'],[109.7,'eyes','prism',0,'cut','distance'],[112.55,'portraitR','prism',0,'dissolve','echo'],[115.15,'high','prism',0,'cut','echo'],[117.8,'low','prism',0,'whip','scatter'],[121,'aerial','prism',0,'cut','scatter'],[123.83,'portraitL','prism',0,'dissolve','poem'],[127.2,'transit','flight',3,'iris','cinema'],
- [130.99,'floatR','cosmos',3,'dip','vertical'],[133.57,'floatL','cosmos',3,'dissolve','orbit'],[136.1,'portraitR','cosmos',3,'cut','echo'],[140.69,'rose','cosmos',3,'iris','orbit'],[146.13,'crystal','cosmos',3,'dissolve','dissolve'],[149.35,'tunnel','flight',3,'whip','cinema'],
- [151.71,'wideR','cathedral',0,'white','burst'],[154.3,'low','cathedral',0,'cut','burst'],[156.95,'portraitL','cathedral',0,'cut','wave'],[161.57,'high','cathedral',0,'match','distance'],[164.3,'eyes','cathedral',0,'cut','distance'],[167.02,'portraitR','cathedral',0,'dissolve','echo'],[169.6,'rose','cathedral',0,'iris','echo'],[172.41,'wideL','cathedral',0,'whip','scatter'],[175.25,'aerial','cathedral',0,'cut','scatter'],[178.3,'eyes','lake',0,'dip','dissolve'],[181.2,'crystal','lake',0,'dissolve','dissolve'],
- [185.46,'low','cathedral',3,'white','burst'],[188.1,'portraitR','cathedral',3,'cut','burst'],[190.67,'orbit','cathedral',3,'match','comet'],[195.26,'wideR','cathedral',3,'cut','distance'],[198,'eyes','cathedral',3,'cut','distance'],[200.79,'portraitL','cathedral',3,'dissolve','echo'],[203.4,'high','cathedral',3,'cut','echo'],[206.03,'finale','cathedral',0,'whip','scatter'],[209.1,'aerial','cathedral',0,'cut','scatter'],[212.07,'portraitR','cathedral',0,'dissolve','poem'],[217.27,'farewell','cathedral',0,'dissolve','unity'],[222,'rose','cosmos',0,'dissolve','cinema']
+  [0,'longLake','lake',1,'dip','cinema'],
+  [32.75,'longPrism','prism',0,'dissolve','orbit'],
+  [66.27,'longArcade','arcade',2,'dissolve','wave'],
+  [86.96,'longEarth','earth',0,'dissolve','earth'],
+  [97.31,'longPrism','prism',0,'dissolve','distance'],
+  [130.99,'longShip','flight',0,'dissolve','ship'],
+  [151.71,'longCathedral','cathedral',0,'dissolve','cathedral'],
+  [185.46,'longFinale','cathedral',3,'dissolve','finale']
  ];
  return rows.map((r,i)=>{
   let t=r[0];if(i&&r[4]!=='dissolve'&&r[4]!=='dip'){
@@ -279,7 +288,7 @@ function luminousCurve(points,color=0x80dfff,opacity=.5){const m=new THREE.LineB
 function makeCinema(){
  spectrumTexture=new THREE.DataTexture(spectrumBytes,64,1,THREE.RGBAFormat);spectrumTexture.minFilter=spectrumTexture.magFilter=THREE.LinearFilter;spectrumTexture.needsUpdate=true;
  scene.add(new THREE.HemisphereLight(0x92caff,0x081124,1.6));
- for(const [color,power,pos] of [[0x4c9dff,55,[-12,12,8]],[0xc5b1ff,45,[13,17,-6]],[0x8aeeff,40,[0,6,-16]]]){const l=new THREE.PointLight(color,power,75,1.5);l.position.set(...pos);scene.add(l);cinemaLights.push(l)}
+ for(const [color,power,pos] of [[0x4c9dff,28,[-12,12,8]],[0xc5b1ff,24,[13,17,-6]],[0x8aeeff,20,[0,6,-16]]]){const l=new THREE.PointLight(color,power,75,1.5);l.position.set(...pos);scene.add(l);cinemaLights.push(l)}
  // Instanced glass towers give the chorus a full architectural silhouette.
  city=new THREE.Group();scene.add(city);
  const towerMat=new THREE.MeshStandardMaterial({color:0x23466b,metalness:.68,roughness:.21,emissive:0x102742,emissiveIntensity:.3});
@@ -365,7 +374,7 @@ function animateCinema(t,s,cover){
   p.set([x,y,z,x,y,z+len*(.5+hyperBase[i*4+3])],i*6)
  }hyperfield.geometry.attributes.position.needsUpdate=true;hyperfield.material.opacity=.35+air*.3;starBridge.position.z=((music.travel*5)%55)}else starBridge.position.z=0;
  stageLeds.children.forEach((b,i)=>{const v=music[scoreKeys[b.userData.band]];b.scale.z=.35+v*2.2;b.material.opacity=.25+v*.5+a*.2});
- cinemaLights.forEach((l,i)=>{l.intensity=(energetic?50:22)*(1+low*.35+a*.5);if(world==='cathedral')l.color.setHex(i===1?0xffc7bf:0x9bcfff);else l.color.setHex(i===1?0xa496ff:0x65bbff)});
+ cinemaLights.forEach((l,i)=>{l.intensity=(energetic?30:12)*(1+low*.22+a*.32);if(world==='cathedral')l.color.setHex(i===1?0xffc7bf:0x9bcfff);else l.color.setHex(i===1?0xa496ff:0x65bbff)});
  floor.material.uniforms.hit.value=a;
  floor.material.uniforms.tint.value.set(world==='cathedral'?.70:.24,world==='cathedral'?.72:.62,1);
 }
@@ -511,7 +520,7 @@ function makeVoyage(){
  scene.traverse(o=>{if(o.isMesh&&o.material?.isMeshStandardMaterial&&!o.material.transparent){o.castShadow=true;o.receiveShadow=true}});
  heroMeshes.forEach(m=>{m.castShadow=true;m.customDepthMaterial=new THREE.MeshDepthMaterial({map:m.material.map,alphaTest:.35,depthPacking:THREE.RGBADepthPacking})});
  const fill=new THREE.DirectionalLight(0xe5c4cf,.65);fill.position.set(80,45,-100);scene.add(fill);
- makeMeteorShower();
+ makeMeteorShower();makeSpecialProps();
 }
 function makeMeteorShower(){
  // Birth times and trajectories are fixed in the film clock, so seeking is exact.
@@ -547,6 +556,51 @@ function animateVoyage(t){
  }
  meteorSystem.geometry.attributes.position.needsUpdate=meteorSystem.geometry.attributes.color.needsUpdate=true;meteorHeads.geometry.attributes.position.needsUpdate=meteorHeads.geometry.attributes.color.needsUpdate=true;
  cometFleet.forEach((g,i)=>{const d=g.userData,u=((t+d.phase)%d.period)/d.duration,visible=u>=0&&u<=1;g.visible=visible;if(visible){g.position.set(camera.position.x-130+u*260,d.y+Math.sin(u*Math.PI)*10,camera.position.z+d.z);g.children[0].material.opacity=Math.sin(u*Math.PI)*(.45+music.air*.25);g.children[1].material.opacity=Math.sin(u*Math.PI)*.7}});
+}
+
+// Dedicated long-take props. They live in the same world as the camera route
+// and are enabled by exact LRC phrases from suisei-direct.js.
+let specialShip,specialEarth,specialEarthGlow,specialEarthClouds,specialEarthNight,specialComets;
+const shipMat=new THREE.MeshStandardMaterial({color:0x8fa7b7,metalness:.62,roughness:.46,envMapIntensity:.56});
+const shipDark=new THREE.MeshStandardMaterial({color:0x1e2a38,metalness:.72,roughness:.34,envMapIntensity:.45});
+const shipGlass=new THREE.MeshStandardMaterial({color:0x58c8ef,metalness:.22,roughness:.18,emissive:0x116b9a,emissiveIntensity:.75,envMapIntensity:.85});
+const earthMat=new THREE.MeshStandardMaterial({color:0x397aa4,roughness:.82,metalness:.02,envMapIntensity:.32});
+function earthTexture(){
+ const c=document.createElement('canvas');c.width=1024;c.height=512;const x=c.getContext('2d');
+ const g=x.createLinearGradient(0,0,0,512);g.addColorStop(0,'#0d3158');g.addColorStop(.5,'#1e6e9c');g.addColorStop(1,'#081a38');x.fillStyle=g;x.fillRect(0,0,1024,512);
+ const land='#6c9a69';for(let i=0;i<24;i++){const px=rand()*1024,py=55+rand()*390,rx=22+rand()*72,ry=10+rand()*34;x.beginPath();for(let j=0;j<12;j++){const a=j/12*TAU,r=1+.22*Math.sin(j*2.4+px);x.lineTo(px+Math.cos(a)*rx*r,py+Math.sin(a)*ry*r)}x.closePath();x.fillStyle=land;x.globalAlpha=.68;x.fill()}
+ x.globalAlpha=1;for(let i=0;i<90;i++){x.fillStyle=i%3?'rgba(216,238,222,.18)':'rgba(255,255,255,.28)';x.beginPath();x.ellipse(rand()*1024,rand()*512,24+rand()*70,3+rand()*10,rand()*TAU,0,TAU);x.fill()}
+ return new THREE.CanvasTexture(c);
+}
+function makeSpecialProps(){
+ const map=earthTexture();map.colorSpace=THREE.SRGBColorSpace;map.wrapS=THREE.RepeatWrapping;
+ specialEarth=new THREE.Group();specialEarth.visible=false;specialEarth.position.set(0,-10,-198);worldStage.add(specialEarth);
+ const globe=new THREE.Mesh(new THREE.SphereGeometry(16,96,64),earthMat);globe.material.map=map;globe.material.needsUpdate=true;globe.castShadow=true;globe.receiveShadow=true;specialEarth.add(globe);
+ const night=new THREE.Mesh(new THREE.SphereGeometry(16.08,96,64),new THREE.MeshBasicMaterial({color:0x142644,transparent:true,opacity:.28,blending:THREE.MultiplyBlending,side:THREE.BackSide}));specialEarthNight=night;specialEarth.add(night);
+ const cloudGeo=new THREE.SphereGeometry(16.22,96,64);const cloudCanvas=document.createElement('canvas');cloudCanvas.width=512;cloudCanvas.height=256;const cx=cloudCanvas.getContext('2d');cx.clearRect(0,0,512,256);for(let i=0;i<70;i++){cx.strokeStyle='rgba(255,255,255,.18)';cx.lineWidth=2+rand()*5;cx.beginPath();const yy=rand()*256;cx.moveTo(0,yy);for(let j=0;j<8;j++)cx.quadraticCurveTo(j*70+35,yy+(rand()-.5)*28,j*70+70,yy+(rand()-.5)*28);cx.stroke()}const cloudTex=new THREE.CanvasTexture(cloudCanvas);cloudTex.colorSpace=THREE.SRGBColorSpace;specialEarthClouds=new THREE.Mesh(cloudGeo,new THREE.MeshBasicMaterial({map:cloudTex,transparent:true,opacity:.5,depthWrite:false,side:THREE.DoubleSide}));specialEarth.add(specialEarthClouds);
+ specialEarthGlow=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTexture(),color:0x73c8ff,transparent:true,opacity:.25,depthWrite:false,blending:THREE.AdditiveBlending}));specialEarthGlow.scale.set(42,42,1);specialEarth.add(specialEarthGlow);
+ const halo=new THREE.Mesh(new THREE.SphereGeometry(16.5,64,48),new THREE.MeshBasicMaterial({color:0x59baf0,transparent:true,opacity:.11,side:THREE.BackSide,blending:THREE.AdditiveBlending}));specialEarth.add(halo);
+ specialComets=new THREE.Group();specialComets.visible=false;worldStage.add(specialComets);
+ for(let i=0;i<34;i++){const g=new THREE.Group(),len=4+rand()*12;const head=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTexture(),color:i%3?0xc6e9ff:0xa5d7ff,transparent:true,opacity:.8,depthWrite:false,blending:THREE.AdditiveBlending}));head.scale.setScalar(.8+rand()*1.4);g.add(head);g.add(new THREE.Line(new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0,0,0),new THREE.Vector3(-len,2+rand()*2,0)]),new THREE.LineBasicMaterial({color:0x7fc6ef,transparent:true,opacity:.68,blending:THREE.AdditiveBlending,depthWrite:false})));g.userData={phase:rand()*TAU,orbit:rand()*TAU,radius:13+rand()*18};specialComets.add(g)}
+ specialShip=new THREE.Group();specialShip.visible=false;worldStage.add(specialShip);
+ const hull=new THREE.Mesh(new THREE.SphereGeometry(2.7,64,32),shipMat);hull.scale.set(1.9,.62,.83);specialShip.add(hull);
+ const nose=new THREE.Mesh(new THREE.ConeGeometry(1.2,3.5,48),shipMat);nose.rotation.z=-Math.PI/2;nose.position.x=3.05;nose.scale.set(1,.78,.78);specialShip.add(nose);
+ const dorsal=new THREE.Mesh(new THREE.BoxGeometry(2.3,.12,1.08),shipDark);dorsal.position.set(-.1,.52,0);dorsal.rotation.z=.09;specialShip.add(dorsal);
+ const shipWindow=new THREE.MeshBasicMaterial({color:0x8fe9ff,transparent:true,opacity:.95});
+ for(const side of [-1,1])for(let i=0;i<5;i++){const win=new THREE.Mesh(new THREE.SphereGeometry(.24,24,16),shipWindow);win.scale.set(1,.6,.38);win.position.set(-.9+i*.47,.43,side*.93);specialShip.add(win)}
+ const cockpit=new THREE.Mesh(new THREE.SphereGeometry(.52,32,20),shipWindow);cockpit.scale.set(1.25,.55,.38);cockpit.position.set(.45,.5,.88);specialShip.add(cockpit);
+ const hullEdge=new THREE.LineSegments(new THREE.EdgesGeometry(hull.geometry,18),new THREE.LineBasicMaterial({color:0xb9e8f5,transparent:true,opacity:.34,blending:THREE.AdditiveBlending}));hullEdge.scale.copy(hull.scale);specialShip.add(hullEdge);
+ for(const z of [-.72,.72]){const wing=new THREE.Mesh(new THREE.BoxGeometry(2.3,.08,1.8),shipDark);wing.position.set(-.25,-.18,z);wing.rotation.y=z>0?.12:-.12;specialShip.add(wing)}
+ for(let i=0;i<3;i++){const ring=new THREE.Mesh(new THREE.TorusGeometry(.38+i*.08,.045,10,36),new THREE.MeshBasicMaterial({color:i===1?0xa9ecff:0x6bd1f2,transparent:true,opacity:.75,blending:THREE.AdditiveBlending}));ring.rotation.y=Math.PI/2;ring.position.x=-2.08-i*.16;specialShip.add(ring)}
+ const engineGlow=new THREE.Sprite(new THREE.SpriteMaterial({map:glowTexture(),color:0x68cfff,transparent:true,opacity:.85,blending:THREE.AdditiveBlending}));engineGlow.position.x=-2.18;engineGlow.scale.set(4.2,4.2,1);specialShip.add(engineGlow);specialShip.userData={engineGlow};
+ for(let i=0;i<3;i++){const antenna=new THREE.Mesh(new THREE.CylinderGeometry(.025,.025,1.5,8),shipDark);antenna.position.set(-.6+i*.6,.9,0);antenna.rotation.z=(i-1)*.28;specialShip.add(antenna)}
+ specialShip.scale.setScalar(1.9);specialShip.rotation.set(.08,-.22,.03);
+}
+function animateSpecialProps(t,kind,look){
+ const shipOn=kind==='ship',earthOn=kind==='earth'||kind==='earth-comets',cometOn=kind==='earth-comets';specialShip.visible=shipOn;specialEarth.visible=earthOn;specialComets.visible=cometOn;
+ if(earthOn){specialEarth.position.set(look.x,-12,look.z-17);specialEarth.rotation.y=t*.008;specialEarthClouds.rotation.y=t*.017;specialEarthNight.rotation.y=-t*.004;specialEarthGlow.material.opacity=.18+music.air*.12;specialEarth.scale.setScalar(1+music.sub*.025)}
+ if(cometOn){specialComets.position.set(look.x,look.y+3,look.z-12);specialComets.rotation.z=Math.sin(t*.18)*.06;specialComets.children.forEach((g,i)=>{const u=g.userData,a=t*.22+u.phase;g.position.set(Math.cos(a)*u.radius,Math.sin(a*1.21)*u.radius*.34,Math.sin(a)*7);g.rotation.z=-.25+Math.sin(t*.5+i)*.08;g.scale.setScalar(1+music.attack*.22)})}
+ if(shipOn){const f=new THREE.Vector3().subVectors(look,camera.position).normalize(),r=new THREE.Vector3().crossVectors(f,new THREE.Vector3(0,1,0)).normalize();specialShip.position.copy(look).addScaledVector(f,-19).addScaledVector(r,3.2);specialShip.position.y+=3.2+Math.sin(t*.5)*.45;specialShip.rotation.y=Math.atan2(f.x,f.z)+Math.sin(t*.17)*.08;specialShip.rotation.z=Math.sin(t*.21)*.06;specialShip.scale.setScalar(.62+music.rms*.05);specialShip.userData.engineGlow.material.opacity=.48+music.air*.4+music.hit*.25}
 }
 
 function makePost(){
@@ -589,6 +643,8 @@ function resize(){
  if(!renderer)return;renderDirty=true;const w=innerWidth,h=innerHeight,dpr=Math.min(devicePixelRatio,highQuality?1.75:1)* (highQuality?1:.8);renderer.setPixelRatio(dpr);renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();worldTarget.setSize(Math.round(w*dpr),Math.round(h*dpr));reflectionTarget.setSize(Math.round(w*dpr*.45),Math.round(h*dpr*.45));previousTarget.setSize(Math.round(w*dpr),Math.round(h*dpr));historyValid=false;bloomA.setSize(Math.max(1,Math.round(w*dpr/3)),Math.max(1,Math.round(h*dpr/3)));bloomB.setSize(bloomA.width,bloomA.height);postMaterial.uniforms.resolution.value.set(w*dpr,h*dpr);stars.material.uniforms.pixelRatio.value=dpr;lastReflection=-1
 }
 let shotId=-1,lyricLayout='bottom',compositionKey='';
+const specialShipLines=new Set(['彗星のように','遠くから近くから','君を見つめているんだよ','周回軌道離れぬように','この身を溶かしながら']);
+const specialEarthLines=new Set(['存在価値だとか生きてる意味とか','迷ったら空を見上げて']);
 const look=new THREE.Vector3(),mirroredLook=new THREE.Vector3(),reflectionMatrix=new THREE.Matrix4(),facePoint=new THREE.Vector3(),typeAnchor=new THREE.Vector3(),actorPoint=new THREE.Vector3(),projectedActor=new THREE.Vector3();
 function getShot(t){let l=0,r=shots.length;while(l<r){let m=(l+r)>>1;if(shots[m].start<=t)l=m+1;else r=m}return shots[Math.max(0,l-1)]}
 function lineComposition(index,mobile){
@@ -633,6 +689,14 @@ function direct(t,cover=false){
  for(const l of cinemaLights)l.intensity=18+music.bass*5;
  if(stageLeds)stageLeds.children.forEach((m,i)=>{if(m.material)m.material.opacity=.18+music[scoreKeys[i%5]]*.3});
  animateVoyage(motionTime);
+ let cueIndex=-1;for(let i=0;i<LYRICS.length;i++)if(t>=LYRICS[i].t)cueIndex=i;
+ const cueText=cueIndex>=0?LYRICS[cueIndex].text:'';
+ const specialKind=!cover&&specialShipLines.has(cueText)?'ship':(!cover&&specialEarthLines.has(cueText)?(cueText==='迷ったら空を見上げて'?'earth-comets':'earth'):'');
+ performers.forEach(root=>root.visible=!specialKind);
+ stages.forEach(stage=>stage.visible=!specialKind);
+ if(meteorSystem)meteorSystem.visible=!specialKind||specialKind==='earth-comets';
+ if(specialKind){hero.visible=false;platform.visible=false;orbit.visible=false;architecture.visible=false;shards.visible=false;petals.visible=false;lightRays.visible=false;}
+ animateSpecialProps(motionTime,specialKind,look);
  facePoint.copy(typeAnchor);facePoint.y+=7.8;facePoint.applyMatrix4(camera.matrixWorldInverse);
  const close=distance<19;
  postMaterial.uniforms.focus.value=Math.max(2,-facePoint.z);postMaterial.uniforms.aperture.value=close?(highQuality?.0022:.0006):.00018;
@@ -803,7 +867,7 @@ function frame(now){
 async function init(){
  try{
   $('#ending').inert=true;$('#controls').inert=true;
-  renderer=new THREE.WebGLRenderer({canvas:$('#scene'),antialias:false,alpha:false,powerPreference:'high-performance'});renderer.outputColorSpace=THREE.LinearSRGBColorSpace;renderer.setClearColor(0x050b1c);renderer.autoClear=true;
+  renderer=new THREE.WebGLRenderer({canvas:$('#scene'),antialias:true,alpha:false,powerPreference:'high-performance'});renderer.outputColorSpace=THREE.LinearSRGBColorSpace;renderer.setClearColor(0x050b1c);renderer.autoClear=true;renderer.toneMapping=THREE.NoToneMapping;
   $('#scene').addEventListener('webglcontextlost',e=>{e.preventDefault();audio.pause();fail('图形上下文已暂停。请重新载入页面恢复播放。')});
   THREE.DefaultLoadingManager.onError=url=>fail('立绘载入失败，请重新载入页面。');
   makeWorld();makePost();resize();
